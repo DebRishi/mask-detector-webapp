@@ -64,10 +64,10 @@ const Dashboard = () => {
                         onMouseOut={() => setShowInfo(false)}
                     />
                     <div 
-                        className="absolute right-1 bg-black text-zinc-400 w-[300px] p-2 mt-1 text-center rounded-lg"
+                        className="absolute right-1 bg-black text-zinc-400 w-[250px] sm:w-[400px] p-2 mt-1 text-center rounded-lg"
                         hidden={!showInfo}
                     >
-                        This application sends a series of HTTP requests at regular time intervals instead of using WebSockets, which could potentially result in delayed response depending on your network.
+                        This application sends a series of HTTP requests at regular time intervals instead of using WebSockets, which results in a delayed response (~ 10 seconds). Additionally, prediction API is deployed on a development server. For a smoother experience, download the project from my GitHub and run it your local machine 😃.
                     </div>
                 </div>
             </header>
